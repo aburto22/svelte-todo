@@ -1,11 +1,12 @@
 <script lang="ts">
-	import type { LayoutServerData } from './$types';
+	import type { PageServerData } from './$types';
 	import Header from '../components/Header.svelte';
 	import Todos from '../components/Todos.svelte';
 	import Form from '../components/Form.svelte';
 
-	export let data: LayoutServerData;
-	let { todos } = data;
+	export let data: PageServerData;
+
+	const { todos } = data;
 </script>
 
 <Header />
